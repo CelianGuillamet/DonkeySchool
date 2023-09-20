@@ -2,82 +2,81 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This website is the portfolio of Celian Guillamet">
         <title>Mon portfolio</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <h1>Hi, I'm Celian Guillamet. <br> Currently learning how to be a dev ! </h1>
-            <a href="#projects">SEE MY WORK</a>
-            <nav id="navbar">
-                <ul>
-                    <li>
-                        <a href="#projects" title="">PROJECTS</a>
-                        <ul>
-                            <li><a href="#project1">Project 1</a></li>
-                            <li><a href="#project2">Project 2</a></li>
-                            <li><a href="#project3">Project 3</a></li>
-                            <li><a href="#project4">Project 4</a></li>
-                            <li><a href="#project5">Project 5</a></li>
-                            <li><a href="#project6">Project 6</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#about" title="">ABOUT</a></li>
-                    <li>
-                        <a href="#articles" title="">ARTICLES</a>
-                        <ul>
-                            <li><a href="#article1">Article 1</a></li>
-                            <li><a href="#article2">Article 2</a></li>
-                            <li><a href="#article3">Article 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact" title="">CONTACT</a></li>
-                </ul>
-            </nav>
+            <div id="header">
+                <h1>Hi, I'm Celian Guillamet. <br> Currently learning how to be a dev ! </h1>
+                <a href="#projects" class="landing-button">SEE MY WORK</a>
+            </div>
         </header>
-        <main>
+        <main class="container">
+            <nav class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#header" title="">HOME</a>
+                    <a href="#projects" title="">PROJECTS</a>
+                    <a href="#about" title="">ABOUT</a>
+                    <a href="#articles" title="">ARTICLES</a>
+                    <a href="#contact" title="">CONTACT</a>
+                </div>
+            </nav>
             <section id="projects">
                 <h2>PROJECTS</h2>
                 <div>
-                    <div id="project1">
+                    <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
-                        <h3>Project 1</h3>
-                        <p>description</p>
-                        <a href="project1.html" title="Link to the project 1">Learn more</a>
+                        <div class="description">
+                            <h3>Project 1</h3>
+                            <p>description</p>
+                            <a href="project1.html" title="Link to the project 1">Learn more</a>
+                        </div>
                     </div>
-                    <div id="project2">
+                    <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
-                        <h3>Project 2</h3>
-                        <p>description</p>
-                        <a href="project2.html" title="Link to the project 2">Learn more</a>
+                        <div class="description">
+                            <h3>Project 2</h3>
+                            <p>description</p>
+                            <a href="project2.html" title="Link to the project 2">Learn more</a>
+                        </div>
                     </div>
-                    <div id="project3">
+                    <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
-                        <h3>Project 3</h3>
-                        <p>description</p>
-                        <a href="project3.html" title="Link to the project 3">Learn more</a>
+                        <div class="description">
+                            <h3>Project 3</h3>
+                            <p>description</p>
+                            <a href="project3.html" title="Link to the project 3">Learn more</a>
+                        </div>
                     </div>
-                    <div id="project4">
+                    <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
-                        <h3>Project 4</h3>
-                        <p>description</p>
-                        <a href="project4.html" title="Link to the project 4">Learn more</a>
+                        <div class="description">
+                            <h3>Project 4</h3>
+                            <p>description</p>
+                            <a href="project4.html" title="Link to the project 4">Learn more</a>
+                        </div>
                     </div>
-                    <div id="project5">
+                    <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
-                        <h3>Project 5</h3>
-                        <p>description</p>
-                        <a href="project5.html" title="Link to the project 5">Learn more</a>
+                        <div class="description">
+                            <h3>Project 5</h3>
+                            <p>description</p>
+                            <a href="project5.html" title="Link to the project 5">Learn more</a>
+                        </div>
                     </div>
-                    <div id="project6">
+                    <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
-                        <h3>Project 6</h3>
-                        <p>description</p>
-                        <a href="project6.html" title="Link to the project 6">Learn more</a>
+                        <div class="description">
+                            <h3>Project 6</h3>
+                            <p>description</p>
+                            <a href="project6.html" title="Link to the project 6">Learn more</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -95,9 +94,9 @@
                 </div>
                 <div>
                     <h2>SKILLS</h2>
-                    <div>
+                    <div class="skill">
                         <p>HTML</p>
-                        <img src="https://picsum.photos/200/300" alt="progress bar at ...%" >
+                        <img src="https://picsum.photos/200/300" alt="progress bar at ...%">
                         <p>CSS</p>
                         <img src="https://picsum.photos/200/300" alt="progress bar at ...%">
                         <p>JS</p>
@@ -110,39 +109,44 @@
             <section id="articles">
                 <h2>ARTICLES</h2>
                 <div>
-                    <div id="article1">
+                    <div class="article">
                         <img src="https://picsum.photos/200/300" alt="" title="title of the article">
-                        <h3>Article 1</h3>
-                        <p>description</p>
-                        <a href="">Read More...</a>
+                        <div class="article-description">
+                            <h3>Article 1</h3>
+                            <p>description</p>
+                            <a href="">Read More...</a>
+                        </div>
                     </div>
-                    <div id="article2">
+                    <div class="article">
                         <img src="https://picsum.photos/200/300" alt="" title="title of the article">
-                        <h3>Article 2</h3>
-                        <p>description</p>
-                        <a href="">Read More...</a>
+                        <div class="article-description">
+                            <h3>Article 2</h3>
+                            <p>description</p>
+                            <a href="">Read More...</a>
+                        </div>
                     </div>
-                    <div id="article3">
+                    <div class="article">
                         <img src="https://picsum.photos/200/300" alt="" title="title of the article">
-                        <h3>Article 3</h3>
-                        <p>description</p>
-                        <a href="">Read More...</a>
+                        <div class="article-description">
+                            <h3>Article 3</h3>
+                            <p>description</p>
+                            <a href="">Read More...</a>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="contact">
                 <h2>CONTACT</h2>
-                <div>
                     <p>A question or a project in mind ? <br> Feel free to contact me !</p>
                     <form action="/my-handling-form-page" method="post">
                         <ul>
                             <li>
                                 <label for="name">Name:</label>
-                                <input type="text" id="name" name="user_name" placeholder="Enter your name" />
+                                <input type="text" id="name" name="user_name" placeholder="Enter your name">
                             </li>
                             <li>
                                 <label for="mail">Email:</label>
-                                <input type="email" id="mail" name="user_email" placeholder="Enter your email" />
+                                <input type="email" id="mail" name="user_email" placeholder="Enter your email">
                             </li>
                             <li>
                                 <label for="msg">Message:</label>
@@ -151,13 +155,11 @@
                         </ul>
                         <input type="submit" value="Submit">
                     </form>
-                    
             </section>
         </main>
         <footer>
             <p>© 2023 Celian Guillamet</p>
         </footer>
-        <script src="script.js"></script>
     </body>
 
 </html>
