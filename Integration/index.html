@@ -17,19 +17,18 @@
             </div>
         </header>
         <main class="container">
-            <nav class="dropdown">
-                <button class="dropbtn">Menu</button>
-                <div class="dropdown-content">
-                    <a href="#header" title="">HOME</a>
-                    <a href="#projects" title="">PROJECTS</a>
-                    <a href="#about" title="">ABOUT</a>
-                    <a href="#articles" title="">ARTICLES</a>
-                    <a href="#contact" title="">CONTACT</a>
-                </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#header" title="">HOME</a></li>
+                    <li><a href="#projects" title="">PROJECTS</a></li>
+                    <li><a href="#about" title="">ABOUT</a></li>
+                    <li><a href="#articles" title="">ARTICLES</a></li>
+                    <li><a href="#contact" title="">CONTACT</a></li>
+                </ul>
             </nav>
             <section id="projects">
                 <h2>PROJECTS</h2>
-                <div>
+                <div class="container-flex">
                     <div class="project">
                         <img src="https://picsum.photos/200/300" alt="name of the project" class="hover-effect">
                         <div class="description">
@@ -86,7 +85,7 @@
                     <img src="https://picsum.photos/200/300" alt="me" title="A lovely picture of me">
                     <p>Hi, I'm Celian Guillamet. <br> 29yo <br> celian.guillamet@gmail.com <br> 0700000000</p>
                 </div>
-                <div>
+                <div class="education">
                     <h2>EDUCATION</h2>
                     <p>2019-2020 : Web developer training at DonkeySchool</p>
                     <p>2018-2019 : Web developer training at DonkeySchool</p>
@@ -96,65 +95,76 @@
                     <h2>SKILLS</h2>
                     <div class="skill">
                         <p>HTML</p>
-                        <img src="https://picsum.photos/200/300" alt="progress bar at ...%">
+                        <div class="progress-container">
+                            <div class="progress-bar1"></div>
+                        </div>
                         <p>CSS</p>
-                        <img src="https://picsum.photos/200/300" alt="progress bar at ...%">
+                        <div class="progress-container">
+                            <div class="progress-bar2"></div>
+                        </div>
                         <p>JS</p>
-                        <img src="https://picsum.photos/200/300" alt="progress bar at ...%">
+                        <div class="progress-container">
+                            <div class="progress-bar3"></div>
+                        </div>
                         <p>PHP</p>
-                        <img src="https://picsum.photos/200/300" alt="progress bar at ...%">
+                        <div class="progress-container">
+                            <div class="progress-bar4"></div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="articles">
                 <h2>ARTICLES</h2>
-                <div>
-                    <div class="article">
+                <div class="container-flex">
+                    <article class="article">
                         <img src="https://picsum.photos/200/300" alt="" title="title of the article">
                         <div class="article-description">
                             <h3>Article 1</h3>
                             <p>description</p>
                             <a href="">Read More...</a>
                         </div>
-                    </div>
-                    <div class="article">
+                    </article>
+                    <article class="article">
                         <img src="https://picsum.photos/200/300" alt="" title="title of the article">
                         <div class="article-description">
                             <h3>Article 2</h3>
                             <p>description</p>
                             <a href="">Read More...</a>
                         </div>
-                    </div>
-                    <div class="article">
+                    </article>
+                    <article class="article">
                         <img src="https://picsum.photos/200/300" alt="" title="title of the article">
                         <div class="article-description">
                             <h3>Article 3</h3>
                             <p>description</p>
                             <a href="">Read More...</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </section>
             <section id="contact">
                 <h2>CONTACT</h2>
+                <div class="contact">
                     <p>A question or a project in mind ? <br> Feel free to contact me !</p>
-                    <form action="/my-handling-form-page" method="post">
-                        <ul>
-                            <li>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="user_name" placeholder="Enter your name">
-                            </li>
-                            <li>
-                                <label for="mail">Email:</label>
-                                <input type="email" id="mail" name="user_email" placeholder="Enter your email">
-                            </li>
-                            <li>
-                                <label for="msg">Message:</label>
-                                <textarea id="msg" name="user_message" placeholder="Enter your message"></textarea>
-                            </li>
-                        </ul>
-                        <input type="submit" value="Submit">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn" value="Submit">
+                        </div>
                     </form>
+                </div>
+
             </section>
         </main>
         <footer>
