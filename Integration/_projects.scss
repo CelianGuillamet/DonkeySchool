@@ -1,5 +1,6 @@
 #projects {
   background-color: $background-color;
+  background-image: $bg-img;
   color: $secondary-color;
   text-align: center;
   font-size: 1em;
@@ -8,33 +9,25 @@
 }
 
 .container-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
+  @include flex-container();
   width: 100%;
   margin: 0 auto;
 }
 
 .project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 200px;
-  margin-top: 10px;
+  @include flex-project();
+  width: 300px;
+  margin: $margin-project;
+  box-shadow: $shadow-for-txtbg;
+  position: relative;
+  
 
   img {
-    width: 200px;
+    width: 300px;
     height: 400px;
   }
 }
 
 .description {
-  background-color: $primary-color;
-  opacity: 0.8;
-  position: absolute;
-  margin-bottom: 0;
-  width: 200px;
+  @include descripton();
 }

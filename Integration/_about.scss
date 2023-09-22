@@ -2,17 +2,22 @@
   background-color: $background-color;
   color: $secondary-color;
   padding: 20px;
-  margin-bottom: 20px;
   font-size: 1em;
   height: auto;
+
+  
+.about {
+  width: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
-  h2 {
+}
+  .text {
     width: 100%;
+    text-align: center;
   }
 
   .education {
@@ -25,6 +30,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+     
 
     .progress-container {
       width: 100%;

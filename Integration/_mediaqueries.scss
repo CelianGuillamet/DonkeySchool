@@ -13,11 +13,9 @@
     justify-content: center;
     align-items: center;
 
-    h1 {
-      font-size: 1.5em;
-      margin-top: 2em;
-      padding: 0;
-      text-overflow: clip;
+    .home-title {
+      font-size: 3.5em;
+    
     }
   }
 
@@ -44,50 +42,52 @@
   }
 
   .container-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 100%;
+    @include flex-container();
+    width: $project-container-width * 2.2;
     margin: 0 auto;
   }
 
   .project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    @include flex-project();
     width: 300px;
-    margin-top: 10px;
-
-    img {
-      width: 300px;
-      height: 500px;
-    }
+    margin-top: $margin-project;
+    margin-bottom: $margin-project;
   }
 
   #about {
     background-color: $background-color;
     color: $secondary-color;
     padding: 20px;
-    margin-bottom: 20px;
     font-size: 1em;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
 
+    .about {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
+    
     h2 {
       width: 100%;
     }
   }
-
-  .education {
-    margin-left: 10px;
+  .me{
+    width: 650px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
   }
+  .education{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+ 
 
   .skill {
     display: flex;
@@ -121,34 +121,16 @@
       margin-top: 5px;
     }
 
-    .article-description {
-      display: block;
-      background-color: #ffffff;
-      color: black;
-      height: 18.7em;
-      width: 300px;
-    }
+  
   }
 
   #contact {
-    color: black;
+    color: $secondary-color;
 
     h2 {
       width: 100%;
       text-align: left;
       margin-left: 20px;
-    }
-
-    .contact {
-      width: 60%;
-      background-color: lightgray;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      margin-top: 50px;
     }
   }
 
@@ -192,5 +174,24 @@
 
   .btn:hover {
     background-color: #555;
+  }
+  .section-title{
+    font-size: 2em;
+  }
+  .section-title-dark {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container-flex {
+    width: $project-container-width * 3.3;
+  }
+
+  .home-title {
+    font-size: 4.5em;
+  }
+  .about {
+    width: 1000px;
   }
 }

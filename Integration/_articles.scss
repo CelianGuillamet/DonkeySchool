@@ -1,32 +1,34 @@
 #articles {
+  background-image: $bg-img;
   color: $secondary-color;
   text-align: center;
-  margin-bottom: 20px;
   font-size: 1em;
   height: auto;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around;
+  @include flex-container();
   align-content: center;
 
-  h2 {
-    width: 100%;
-    text-align: left;
-    margin-left: 20px;
-  }
-
-  .article {
-    margin-top: 5px;
-  }
 
   .article-description {
-    display: block;
-    background-color: #ffffff;
-    color: black;
-    height: 18.7em;
+    @include descripton();
+  }
+}
+.container-flex {
+  @include flex-container();
+  width: 100%;
+  margin: 0 auto;
+}
+
+.article {
+  @include flex-project();
+  width: 300px;
+  margin: $margin-project;
+  box-shadow: $shadow-for-txtbg;
+  position: relative;
+  
+
+  img {
     width: 300px;
+    height: 400px;
   }
 }

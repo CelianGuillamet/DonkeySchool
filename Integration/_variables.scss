@@ -1,4 +1,4 @@
-$primary-color: #656565;
+$primary-color: #3d3d3d;
 $secondary-color: #fff;
 $background-color: #3d3d3d;
 $button-background: #fff;
@@ -10,3 +10,59 @@ $progress-fill: #4caf50;
 $form-bg: #333;
 $form-text: #fff;
 $form-shadow: rgba(0, 0, 0, 0.1);
+$project-container-width: 300px;
+$margin-project: 1em;
+$project-img-width: 300px;
+$project-img-height: 400px;
+$bg-img: url(img/bckg.png);
+$shadow-for-txtbg : 1px 1px 2px white, 0 3px 1em grey, 0 0 0.2em white;
+
+@mixin flexcontact() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin flex-container() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+@mixin flex-project() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+@mixin img-size() {
+  width: $project-img-width;
+  height: $project-img-height;
+}
+
+@mixin descripton() {
+  background-color: $primary-color;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  width: $project-img-width;
+  padding-bottom: 10px;
+  & a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 1.3em;
+  }
+  & p {
+    color: $secondary-color;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    word-break: break-all;
+  }
+}
