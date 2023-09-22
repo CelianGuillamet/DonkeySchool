@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 1em;
+  height: calc(100vh + 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    padding: 0;
+    text-overflow: clip;
+  }
+}
+
+.landing-button {
+  background-color: $button-background;
+  color: $button-text;
+  border: 1px solid $primary-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 1em;
+  display: inline-block;
+}

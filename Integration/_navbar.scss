@@ -1,0 +1,32 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: $navbar-bg;
+  color: $navbar-text;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $navbar-bg;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  a {
+    display: block;
+    color: $navbar-text;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+}
