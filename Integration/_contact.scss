@@ -1,0 +1,41 @@
+#contact {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  margin: auto;
+  font-size: 1em;
+  height: auto;
+  width: 100%;
+  align-self: center;
+  @include flexcontact;
+  padding-bottom: 20px;
+  
+
+  ul {
+    @include flexcontact;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $primary-color;
+    
+  }
+
+  .contact {
+    width: 60%;
+    background-color: lightgray;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .section-title {
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    text-shadow: $shadow-for-txtbg;
+  }
+  
+}

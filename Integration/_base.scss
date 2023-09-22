@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  background-image: $bg-img;
+  background-repeat: repeat;
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 1em;
+  height: calc(100vh + 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-title {
+    font-size: 1.5em;
+    margin-top: 2em;
+    padding: 0;
+    color: $primary-color;
+    text-overflow: clip;
+    text-shadow: $shadow-for-txtbg;
+    }
+}
+
+.wrapper{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $primary-color;
+}
+
+.wrapper a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: $secondary-color;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.wrapper a span{
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: $primary-color;
+  background: $secondary-color;
+  transition: all .35s;
+}
+
+.wrapper a:hover{
+  color: $primary-color;
+}
+
+.wrapper a:hover:after{
+  width: 100%;
+}
+
+
+.section-title-dark {
+  color: $primary-color;
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+  text-shadow: $shadow-for-txtbg;
+}

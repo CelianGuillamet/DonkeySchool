@@ -1,0 +1,33 @@
+#projects {
+  background-color: $background-color;
+  background-image: $bg-img;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 1em;
+  height: auto;
+  width: 100%;
+}
+
+.container-flex {
+  @include flex-container();
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project {
+  @include flex-project();
+  width: 300px;
+  margin: $margin-project;
+  box-shadow: $shadow-for-txtbg;
+  position: relative;
+  
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.description {
+  @include descripton();
+}

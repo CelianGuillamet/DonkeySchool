@@ -1,0 +1,70 @@
+#about {
+  background-color: $background-color;
+  color: $secondary-color;
+  padding: 20px;
+  font-size: 1em;
+  height: auto;
+
+  
+.about {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .education {
+    margin-left: 10px;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+     
+
+    .progress-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      margin: 20px;
+  }
+  
+  .progress-bar1 {
+      width: 75%; 
+      height: 30px;
+      background-color: #4caf50;
+  }
+  .progress-bar2 {
+    width: 70%; 
+    height: 30px;
+    background-color: #4caf50;
+}
+
+.progress-bar3 {
+    width: 10%; 
+    height: 30px;
+    background-color: #4caf50;
+}
+
+.progress-bar4 {
+    width: 1%; 
+    height: 30px;
+    background-color: #4caf50;
+}
+
+    img {
+      width: 100%;
+      height: 100px;
+      margin: 10px;
+    }
+  }
+}
