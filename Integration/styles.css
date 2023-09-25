@@ -12,6 +12,11 @@ body {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-image: url(img/bckg.png);
   background-repeat: repeat;
@@ -27,7 +32,7 @@ header {
 header .home-title {
   font-size: 1.5em;
   margin-top: 2em;
-  padding: 0;
+  margin-bottom: 1em;
   color: #3d3d3d;
   text-overflow: clip;
   text-shadow: 1px 1px 2px white, 0 3px 1em grey, 0 0 0.2em white;
@@ -38,6 +43,7 @@ header .home-title {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #3d3d3d;
+  margin-top: 10px;
 }
 
 .wrapper a {
@@ -87,6 +93,20 @@ header .home-title {
   text-align: left;
   margin-left: 20px;
   text-shadow: 1px 1px 2px white, 0 3px 1em grey, 0 0 0.2em white;
+}
+
+.section-title {
+  width: 2rem;
+  text-align: left;
+  padding: 20px;
+  color: #fff;
+}
+
+section > h2 {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 20px;
 }
 
 .navbar {
@@ -179,61 +199,70 @@ header .home-title {
 #about {
   background-color: #3d3d3d;
   color: #fff;
-  padding: 20px;
-  font-size: 1em;
-  height: auto;
 }
-#about .about {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-#about .text {
-  width: 100%;
-  text-align: center;
-}
-#about .education {
-  margin-left: 10px;
-}
-#about .skill {
+
+.container-about {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 350px;
+  margin: 0 auto;
+  text-align: justify;
 }
-#about .skill .progress-container {
-  width: 100%;
-  background-color: #f1f1f1;
-  margin: 20px;
+
+.container-about > div {
+  width: 17em;
+  margin: 1em;
 }
-#about .skill .progress-bar1 {
-  width: 75%;
-  height: 30px;
-  background-color: #4caf50;
+
+.container-about > div:nth-of-type(3) {
+  min-width: 100%;
+  margin: 0;
 }
-#about .skill .progress-bar2 {
-  width: 70%;
-  height: 30px;
-  background-color: #4caf50;
+
+.skills {
+  padding: 20px;
+  text-align: center;
 }
-#about .skill .progress-bar3 {
-  width: 10%;
-  height: 30px;
-  background-color: #4caf50;
+
+.skills .section-title {
+  font-size: 1.5em;
 }
-#about .skill .progress-bar4 {
-  width: 1%;
-  height: 30px;
-  background-color: #4caf50;
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-#about .skill img {
-  width: 100%;
-  height: 100px;
-  margin: 10px;
+
+.skill-item {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill-item p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.progress-container {
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 20px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #5979c3;
+  width: 0;
+  transition: width 0.5s;
 }
 
 #articles {
@@ -329,15 +358,29 @@ header .home-title {
   background-color: lightgray;
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 20px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-#contact .section-title {
-  width: 100%;
-  text-align: left;
-  margin-left: 20px;
-  text-shadow: 1px 1px 2px white, 0 3px 1em grey, 0 0 0.2em white;
+#contact .form-group {
+  margin-bottom: 20px;
+}
+#contact label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#contact textarea {
+  height: 150px;
 }
 
 footer {
@@ -403,48 +446,10 @@ footer {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  #about {
-    background-color: #3d3d3d;
-    color: #fff;
-    padding: 20px;
-    font-size: 1em;
-    height: auto;
-  }
-  #about .about {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-  #about h2 {
-    width: 100%;
-  }
-  .me {
+  .container-about {
     width: 650px;
-    height: 300px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-  .education {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-  }
-  .skill {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .skill img {
-    width: 100%;
-    height: 100px;
-    margin: 10px;
+    align-items: flex-end;
+    justify-content: space-evenly;
   }
   #articles {
     color: #000000;
@@ -473,22 +478,6 @@ footer {
   h1 {
     text-align: center;
     color: #333;
-  }
-  .form-group {
-    margin-bottom: 20px;
-  }
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  input[type=text],
-  input[type=email],
-  textarea {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
   }
   textarea {
     height: 150px;
@@ -520,6 +509,9 @@ footer {
     font-size: 4.5em;
   }
   .about {
+    width: 1000px;
+  }
+  .container-about {
     width: 1000px;
   }
 }/*# sourceMappingURL=styles.css.map */

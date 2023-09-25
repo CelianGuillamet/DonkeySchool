@@ -12,6 +12,11 @@ body {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-image: $bg-img;
   background-repeat: repeat;
@@ -27,7 +32,7 @@ header {
   .home-title {
     font-size: 1.5em;
     margin-top: 2em;
-    padding: 0;
+    margin-bottom: 1em;
     color: $primary-color;
     text-overflow: clip;
     text-shadow: $shadow-for-txtbg;
@@ -39,6 +44,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $primary-color;
+  margin-top: 10px;
 }
 
 .wrapper a{
@@ -89,4 +95,19 @@ header {
   text-align: left;
   margin-left: 20px;
   text-shadow: $shadow-for-txtbg;
+}
+
+.section-title {
+  width: 2rem;
+  text-align: left;
+  padding: 20px;
+  color: $secondary-color;
+}
+
+section > h2 {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 20px;
+
 }
