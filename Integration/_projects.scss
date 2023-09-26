@@ -21,6 +21,7 @@
   box-shadow: $shadow-for-txtbg;
   position: relative;
   
+  
 
   img {
     width: 300px;
@@ -30,4 +31,11 @@
 
 .description {
   @include descripton();
+  transition: opacity 0.3s;
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
+  
+  
 }
