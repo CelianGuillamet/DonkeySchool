@@ -1,70 +1,75 @@
-#about {
-  background-color: $background-color;
+#about{
+  background-color: $primary-color;
   color: $secondary-color;
+}
+
+.container-about img{
+  border-radius: 70%;
+  width: 100%;
+}
+
+.container-about{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+width: 350px;
+margin: 0 auto;
+text-align: justify;
+}
+
+.container-about > div{
+  width:17em;
+  margin: 1em;
+
+}
+
+.container-about > div:nth-of-type(3){
+  min-width: 100%;
+  margin: 0;
+}
+
+
+.skills {
   padding: 20px;
-  font-size: 1em;
-  height: auto;
+  text-align: center;
+}
 
-  
-.about {
-  width: 300px;
+.skills .section-title {
+  font-size: 1.5em;
+}
+
+.skill {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-}
-  .text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .education {
-    margin-left: 10px;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-     
-
-    .progress-container {
-      width: 100%;
-      background-color: #f1f1f1;
-      margin: 20px;
-  }
-  
-  .progress-bar1 {
-      width: 75%; 
-      height: 30px;
-      background-color: #4caf50;
-  }
-  .progress-bar2 {
-    width: 70%; 
-    height: 30px;
-    background-color: #4caf50;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.progress-bar3 {
-    width: 10%; 
-    height: 30px;
-    background-color: #4caf50;
+.skill-item {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.progress-bar4 {
-    width: 1%; 
-    height: 30px;
-    background-color: #4caf50;
+.skill-item p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: $secondary-color;
 }
 
-    img {
-      width: 100%;
-      height: 100px;
-      margin: 10px;
-    }
-  }
+.progress-container {
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 20px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #5979c3;
+  width: 0;
+  transition: width 0.5s;
 }

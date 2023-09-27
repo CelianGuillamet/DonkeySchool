@@ -12,7 +12,7 @@ $form-text: #fff;
 $form-shadow: rgba(0, 0, 0, 0.1);
 $project-container-width: 300px;
 $margin-project: 1em;
-$project-img-width: 300px;
+$project-img-width: 100%;
 $project-img-height: 400px;
 $bg-img: url(img/bckg.png);
 $shadow-for-txtbg : 1px 1px 2px white, 0 3px 1em grey, 0 0 0.2em white;
@@ -52,7 +52,7 @@ $shadow-for-txtbg : 1px 1px 2px white, 0 3px 1em grey, 0 0 0.2em white;
   position: absolute;
   bottom: 0;
   width: $project-img-width;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   & a {
     text-decoration: none;
     color: $secondary-color;
